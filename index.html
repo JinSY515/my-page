@@ -29,7 +29,7 @@
 <header>
   <div class="profilePhoto"> 
     <!-- Profile photo --> 
-    <!-- <img src="" alt="sample" width="259">  -->
+    <img src="AboutPageAssets/images/photo.jpg" alt="sample" width="200" > 
   </div>
 <!--	<img src="AboutPageAssets/images/fonitAigolkatan.jpg" alt="sample" width="259"> </div>-->
   <!-- Identity details -->
@@ -37,9 +37,8 @@
     <h1>Siyoon Jin</h1>
 <!--    <h3>Undergraduate student</h3>-->
     <hr>
-    <p>I am an undergraduate student in the Department of Computer Science and Engineering at Korea University under the supervision of Prof. <a href="https://cvlab.korea.ac.kr/" target="_blank">
-		Seungryong Kim</a>. My research is in computer vision and deep learning, specifically interested in diffusion-based generative models. 
-		<br>
+    <p>I am a 1st year MS student at Computer Vision Lab (CVLAB) under the supervision of Prof. <a href="https://cvlab.kaist.ac.kr/" target="_blank">
+		Seungryong Kim</a>. My research is in computer vision and deep learning, specifically interested in diffusion-based generative models and image/video personalization.	<br>
     </p>
   </section>
   <!-- Links to Social network accounts -->
@@ -81,11 +80,42 @@
 	  <!-- SMM  -->
 	  	<div class="sectionContent">
 <!--	 		<img align="center" src="AboutPageAssets/images/teaser-multidiffusion.jpg" style="height: 100%; width: 100%; object-fit: contain"  alt="">-->
+			<img src="AboutPageAssets/teasers/am-adapter_teaser.png" alt="AM-Adapter Teaser Image" width="100%;">
+
+	  	</div>
+      <section class="section2Content">
+      		<h2 class="sectionContentTitle">Appearance Matching Adapter for Exemplar-based Semantic Image Synthesis
+      		<h3 class="sectionContentSubTitle"><b><a>Siyoon Jin</a></b>, <a>Jisu Nam</a>, <a>Jiyoung Kim</a>, <a>Dahyun Chung</a>, <a>Yeongseok Kim</a>, <a>Joonhyung Park</a>, <a>Heonjeong Chu</a>, <a>Seungryong Kim</a> 
+	 		</h3>
+		  	<h3 class="sectionContentSubTitle"><em>Under Review<b style="color:darksalmon"></b>
+	 		</em></h3>
+    	</section>
+
+      <aside class="externalResourcesNav">
+
+
+        <div class="dropdown"> <a href="https://cvlab-kaist.github.io/AM-Adapter/" target="_blank">Project Page</a>
+
+        </div>
+        
+        <div class="dropdown"> <a href="https://arxiv.org/pdf/2412.03150" target="_blank">ArXiv</a>
+
+        </div>
+        <div class="dropdown"> <span>Abstract</span>
+        <div class="dropdown-content">
+          <p style="text-align:left;">Exemplar-based semantic image synthesis aims to generate images aligned with given semantic content while preserving the appearance of an exemplar image. Conventional structure-guidance models, such as ControlNet, are limited in that they cannot directly utilize exemplar images as input, relying instead solely on text prompts to control appearance. Recent tuning-free approaches address this limitation by transferring local appearance from the exemplar image to the synthesized image through implicit cross-image matching in the augmented self-attention mechanism of pre-trained diffusion models. However, these methods face challenges when applied to content-rich scenes with significant geometric deformations, such as driving scenes. In this paper, we propose the Appearance Matching Adapter (AM-Adapter), a learnable framework that enhances cross-image matching within augmented self-attention by incorporating semantic information from segmentation maps. To effectively disentangle generation and matching processes, we adopt a stage-wise training approach. Initially, we train the structure-guidance and generation networks, followed by training the AM-Adapter while keeping the other networks frozen. During inference, we introduce an automated exemplar retrieval method to efficiently select exemplar image-segmentation pairs. Despite utilizing a limited number of learnable parameters, our method achieves state-of-the-art performance, excelling in both semantic alignment preservation and local appearance fidelity. Extensive ablation studies further validate our design choices. Code and pre-trained weights will be publicly available.	  </p></div>
+        </div>
+
+      </aside>
+
+      <br>
+      <div class="sectionContent">
+<!--	 		<img align="center" src="AboutPageAssets/images/teaser-multidiffusion.jpg" style="height: 100%; width: 100%; object-fit: contain"  alt="">-->
 			<img src="AboutPageAssets/teasers/dreammatcher_teaser.png" alt="DreamMatcher Teaser Image" width="100%">
 
 	  	</div>
 	  	<section class="section2Content">
-      		<h2 class="sectionContentTitle"><a href="https://ku-cvlab.github.io/DreamMatcher/">DreamMatcher: Appearance Matching Self-Attention for Semantically-Consistent Text-to-Image Personalization</a>
+      		<h2 class="sectionContentTitle">DreamMatcher: Appearance Matching Self-Attention for Semantically-Consistent Text-to-Image Personalization
       		<h3 class="sectionContentSubTitle">Jisu Nam, <a>Heesu Kim</a>, <a>DongJae Lee</a>, <b><a>Siyoon Jin</a></b>, <a>Seungryong Kim</a>, <a>Seunggyu Chang</a> 
 	 		</h3>
 		  	<h3 class="sectionContentSubTitle"><em>CVPR 2024<b style="color:darksalmon"></b>
@@ -93,7 +123,13 @@
     	</section>
       <aside class="externalResourcesNav">
 
+        <div class="dropdown"> <a href="https://cvlab-kaist.github.io/DreamMatcher"  target="_blank">Project Page</a>
 
+        </div>
+
+        <div class="dropdown"> <a href="https://arxiv.org/pdf/2402.09812" target="_blank">ArXiv</a>
+
+        </div>
         <div class="dropdown"> <span>Abstract</span>
         <div class="dropdown-content">
           <p style="text-align:left;">The objective of Text-to-Image (T2I) personalization is to customize diffusion models to a user-provided reference concept, generating diverse images of the reference concept aligned with target prompts. Prior methods for T2I personalization utilize the tuning of pre-trained T2I model weights. However, they require a cumbersome tuning process for each concept before generating personalized images. To ease the use of T2I personalization, we propose DreamMatcher, a tuning-free plug-in method that provides semantically aligned visual conditions of the reference concept to a diffusion model during the denoising process. We find that the key and value in the self-attention module play important roles in generating the structure and appearance of a personalized image, respectively. Hence, DreamMatcher replaces the target values with reference values aligned by semantic matching, leaving the structure path unchanged to preserve the versatile capability of pre-trained T2I models for generating diverse structures. We also employ a semantic-consistent masking strategy to isolate regions irrelevant to the personalized concept, such as the background, from core regions that should be replaced by the aligned appearances. DreamMatcher is compatible with existing T2I models, showing significant improvements in complex, non-rigid scenarios. Intensive experiments demonstrate the effectiveness and superiority of our approach compared to other baselines.	  </p></div>
@@ -106,14 +142,20 @@
 
 	  	</div>
 	  	<section class="section2Content">
-      		<h2 class="sectionContentTitle"> <a href="https://ku-cvlab.github.io/MoDiTalker/">MoDiTalker: Motion-Disentangled Diffusion Model for High-Fidelity Talking Head Generation</a>
+      		<h2 class="sectionContentTitle">MoDiTalker: Motion-Disentangled Diffusion Model for High-Fidelity Talking Head Generation
       		<h3 class="sectionContentSubTitle"> Seyeon Kim*, <b><a>Siyoon Jin</a>*</b>, <a>Jihye Park*</a>, <a>Kihong Kim</a>, <a>Jiyoung Kim</a>, <a>Jisu Nam</a>, <a>Seungryong Kim</a>
 	 		</h3>
-		  	<h3 class="sectionContentSubTitle"><em>under review <b style="color:darksalmon"></b>
+		  	<h3 class="sectionContentSubTitle"><em>AAAI 2025 <b style="color:darksalmon"></b>
 	 		</em></h3>
     	</section>
 		<aside class="externalResourcesNav">
+      <div class="dropdown"> <a href="https://cvlab-kaist.github.io/MoDiTalker"  target="_blank">Project Page</a>
 
+      </div>
+
+      <div class="dropdown"> <a href="https://arxiv.org/pdf/2403.19144" target="_blank">ArXiv</a>
+
+      </div>
 
 		  <div class="dropdown"> <span>Abstract</span>
 			<div class="dropdown-content">
