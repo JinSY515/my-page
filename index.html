@@ -45,7 +45,7 @@
   <aside class="socialNetworkNavBar">
 	   <div class="socialNetworkNav"> 
       <!-- Add a Anchor tag with nested img tag here --> 
-		   <a href="mailto:siyun515@korea.ac.kr">
+		   <a href="mailto:siyun515@kaist.ac.kr">
       <img src="AboutPageAssets/images/mail.png"  alt="sample" width="30" ></a> </div>
       <div class="socialNetworkNav">
       <!-- Add a Anchor tag with nested img tag here --> 
@@ -57,13 +57,11 @@
       <!-- <img src="AboutPageAssets/images/scholar.jpg"  alt="sample" width="30"></a>  </div>
 	  	  <div class="socialNetworkNav"> -->
       <!-- Add a Anchor tag with nested img tag here --> 
-		<!-- <a href="" target="_blank">
-      <img src="AboutPageAssets/images/linkedin.png" alt="sample" width="30"></a>  </div>
-
+	
 	  <div class="socialNetworkNav">
-		 <a href="" target="_blank">
+		 <a href="https://www.linkedin.com/in/siyoon-jin-055a00345" target="_blank">
 			 <img src="AboutPageAssets/images/linkedin.png"  alt="sample" width="30"> </a></div>
--->
+
 	  
   </aside>
 </header>
@@ -77,6 +75,129 @@
   <h2 class="sectionTitle">Publications</h2>
     <hr class="sectionTitleRule">
     <hr class="sectionTitleRule2">
+    <div class="sectionContent">
+			  <img src="AboutPageAssets/teasers/matrix_teaser.png" alt="MATRIX Teaser Image" width="100%;">
+	  	</div>
+      <section class="section2Content">
+      		<h2 class="sectionContentTitle">MATRIX: Mask Track Alignment for Interaction-aware Video Generation</h2>
+      		<h3 class="sectionContentSubTitle"><b><a>Siyoon Jin</a></b>, <a>Seongchan Kim</a>, <a>Dahyun Chung</a>, <a>Jaeho Lee</a>, <a>Hyunwook Choi</a>, <a>Jisu Nam</a>, <a>Jiyoung Kim</a>, <a>Seungryong Kim</a>
+	 		</h3>
+		  	<h3 class="sectionContentSubTitle"><em>Under Review<b style="color:darksalmon"></b>
+	 		</em></h3>
+    	</section>
+
+      <aside class="externalResourcesNav">
+        <div class="dropdown"> <a href="https://cvlab-kaist.github.io/MATRIX/" target="_blank">Project Page</a></div>
+        <div class="dropdown"> <a href="https://arxiv.org/pdf/2510.07310" target="_blank">ArXiv</a></div>
+        <div class="dropdown"> <span>Abstract</span>
+        <div class="dropdown-content">
+          <p style="text-align:left;">
+            Video DiTs have advanced video generation, yet they still struggle to model
+multi-instance or subject-object interactions. This raises a key question: How
+do these models internally represent interactions? To answer this, we curate
+MATRIX-11K, a video dataset with interaction-aware captions and multi-instance
+mask tracks. Using this dataset, we conduct a systematic analysis that formalizes
+two perspectives of video DiTs: semantic grounding, via video-to-text attention,
+which evaluates whether noun and verb tokens capture instances and their re-
+lations; and semantic propagation, via video-to-video attention, which assesses
+whether instance bindings persist across frames. We find both effects concentrate
+in a small subset of interaction-dominant layers. Motivated by this, we introduce
+MATRIX, a simple and effective regularization that aligns attention in specific
+layers of video DiTs with multi-instance mask tracks from the MATRIX-11K
+dataset, enhancing both grounding and propagation. We further propose Inter-
+GenEval, an evaluation protocol for interaction-aware video generation. In ex-
+periments, MATRIX improves both interaction fidelity and semantic alignment
+while reducing drift and hallucination. Extensive ablations validate our design
+choices. Codes and weights will be released.
+	        </p></div>
+        </div>
+
+      </aside>
+
+    <div class="sectionContent">
+			  <img src="AboutPageAssets/teasers/difftrack_teaser.png" alt="DiffTrack Teaser Image" width="100%;">
+	  	</div>
+      <section class="section2Content">
+      		<h2 class="sectionContentTitle">Emergent Temporal Correspondence from Video Diffusion Transformers</h2>
+      		<h3 class="sectionContentSubTitle"><a>Jisu Nam</a>*, <a>Soowon Son</a>*, <a>Dahyun Chung</a>, <a>Jiyoung Kim</a>, <b><a>Siyoon Jin</a></b>, <a>Junwha Hur</a>, <a>Seungryong Kim</a>
+	 		</h3>
+		  	<h3 class="sectionContentSubTitle"><b style="color:darksalmon"><em>NeurIPS 2025</b>
+	 		</em></h3>
+    	</section>
+
+      <aside class="externalResourcesNav">
+        <div class="dropdown"> <a href="https://cvlab-kaist.github.io/DiffTrack/" target="_blank">Project Page</a></div>
+        <div class="dropdown"> <a href="https://arxiv.org/pdf/2506.17220" target="_blank">ArXiv</a></div>
+        <div class="dropdown"> <span>Abstract</span>
+        <div class="dropdown-content">
+          <p style="text-align:left;">
+            Recent advancements in video diffusion models based on Diffusion Transformers
+(DiTs) have achieved remarkable success in generating temporally coherent videos.
+Yet, a fundamental question persists: how do these models internally establish and
+represent temporal correspondences across frames? We introduce DiffTrack, the
+first quantitative analysis framework designed to answer this question. DiffTrack
+constructs a dataset of prompt-generated video with pseudo ground-truth tracking
+annotations and proposes novel evaluation metrics to systematically analyze how
+each component within the full 3D attention mechanism of DiTs (e.g., representa-
+tions, layers, and timesteps) contributes to establishing temporal correspondences.
+Our analysis reveals that query-key similarities in specific, but not all, layers play
+a critical role in temporal matching, and that this matching becomes increasingly
+prominent during the denoising process. We demonstrate practical applications
+of DiffTrack in zero-shot point tracking, where it achieves state-of-the-art perfor-
+mance compared to existing vision foundation and self-supervised video models.
+Further, we extend our findings to motion-enhanced video generation with a novel
+guidance method that improves temporal consistency of generated videos without
+additional training. We believe our work offers crucial insights into the inner
+workings of video DiTs and establishes a foundation for further research and
+applications leveraging their temporal understanding.
+	        </p></div>
+        </div>
+
+      </aside>
+
+      <br>
+	  	<div class="sectionContent">
+			  <img src="AboutPageAssets/teasers/vid-camedit_teaser.png" alt="Vid-CamEdit Teaser Image" width="100%;">
+	  	</div>
+      <section class="section2Content">
+      		<h2 class="sectionContentTitle">Vid-CamEdit: Video Camera Trajectory Editing with Generative Rendering from Estimated Geometry
+      		<h3 class="sectionContentSubTitle"><a>Junyoung Seo</a>, <a>Jisang Han</a>, <a>Jaewoo Jung</a>, <b><a>Siyoon Jin</a></b>, <a>Joungbin Lee</a>, <a>Takuya Narihira</a>, <a>Kazumi Fukuda</a>, <a>Takashi Shibuya</a>, <a>Donghoon Ahn</a>, <a>Shoukang Hu</a>, <a>Seungryong Kim</a>, <a>Yuki Mitsufuji</a>
+	 		</h3>
+		  	<h3 class="sectionContentSubTitle"><em>Under Review<b style="color:darksalmon"></b>
+	 		</em></h3>
+    	</section>
+
+      <aside class="externalResourcesNav">
+        <div class="dropdown"> <a href="https://cvlab-kaist.github.io/Vid-CamEdit/" target="_blank">Project Page</a></div>
+        <div class="dropdown"> <a href="https://arxiv.org/pdf/2506.13697" target="_blank">ArXiv</a></div>
+        <div class="dropdown"> <span>Abstract</span>
+        <div class="dropdown-content">
+          <p style="text-align:left;">
+              We introduce Vid-CamEdit, a novel framework for video
+              camera trajectory editing, enabling the re-synthesis of
+              monocular videos along user-defined camera paths. This
+              task is challenging due to its ill-posed nature and the limited
+              multi-view video data for training. Traditional reconstruc-
+              tion methods struggle with extreme trajectory changes, and
+              existing generative models for dynamic novel view synthesis
+              cannot handle in-the-wild videos. Our approach consists of
+              two steps: estimating temporally consistent geometry, and
+              generative rendering guided by this geometry. By integrat-
+              ing geometric priors, the generative model focuses on syn-
+              thesizing realistic details where the estimated geometry is
+              uncertain. We eliminate the need for extensive 4D training
+              data through a factorized fine-tuning framework that sepa-
+              rately trains spatial and temporal components using multi-
+              view image and video data. Our method outperforms base-
+              lines in producing plausible videos from novel camera tra-
+              jectories, especially in extreme extrapolation scenarios on
+              real-world footage.
+	        </p></div>
+        </div>
+
+      </aside>
+
+      <br>
 	  <!-- SMM  -->
 	  	<div class="sectionContent">
 <!--	 		<img align="center" src="AboutPageAssets/images/teaser-multidiffusion.jpg" style="height: 100%; width: 100%; object-fit: contain"  alt="">-->
@@ -87,7 +208,7 @@
       		<h2 class="sectionContentTitle">Appearance Matching Adapter for Exemplar-based Semantic Image Synthesis
       		<h3 class="sectionContentSubTitle"><b><a>Siyoon Jin</a></b>, <a>Jisu Nam</a>, <a>Jiyoung Kim</a>, <a>Dahyun Chung</a>, <a>Yeongseok Kim</a>, <a>Joonhyung Park</a>, <a>Heonjeong Chu</a>, <a>Seungryong Kim</a> 
 	 		</h3>
-		  	<h3 class="sectionContentSubTitle"><em>Under Review<b style="color:darksalmon"></b>
+		  	<h3 class="sectionContentSubTitle"><b style="color:darksalmon"><em>ICCV 2025</b>
 	 		</em></h3>
     	</section>
 
@@ -108,33 +229,7 @@
 
       </aside>
 
-      <br>
-      <div class="sectionContent">
-<!--	 		<img align="center" src="AboutPageAssets/images/teaser-multidiffusion.jpg" style="height: 100%; width: 100%; object-fit: contain"  alt="">-->
-			<img src="AboutPageAssets/teasers/dreammatcher_teaser.png" alt="DreamMatcher Teaser Image" width="100%">
-
-	  	</div>
-	  	<section class="section2Content">
-      		<h2 class="sectionContentTitle">DreamMatcher: Appearance Matching Self-Attention for Semantically-Consistent Text-to-Image Personalization
-      		<h3 class="sectionContentSubTitle">Jisu Nam, <a>Heesu Kim</a>, <a>DongJae Lee</a>, <b><a>Siyoon Jin</a></b>, <a>Seungryong Kim</a>, <a>Seunggyu Chang</a> 
-	 		</h3>
-		  	<h3 class="sectionContentSubTitle"><em>CVPR 2024<b style="color:darksalmon"></b>
-	 		</em></h3>
-    	</section>
-      <aside class="externalResourcesNav">
-
-        <div class="dropdown"> <a href="https://cvlab-kaist.github.io/DreamMatcher"  target="_blank">Project Page</a>
-
-        </div>
-
-        <div class="dropdown"> <a href="https://arxiv.org/pdf/2402.09812" target="_blank">ArXiv</a>
-
-        </div>
-        <div class="dropdown"> <span>Abstract</span>
-        <div class="dropdown-content">
-          <p style="text-align:left;">The objective of Text-to-Image (T2I) personalization is to customize diffusion models to a user-provided reference concept, generating diverse images of the reference concept aligned with target prompts. Prior methods for T2I personalization utilize the tuning of pre-trained T2I model weights. However, they require a cumbersome tuning process for each concept before generating personalized images. To ease the use of T2I personalization, we propose DreamMatcher, a tuning-free plug-in method that provides semantically aligned visual conditions of the reference concept to a diffusion model during the denoising process. We find that the key and value in the self-attention module play important roles in generating the structure and appearance of a personalized image, respectively. Hence, DreamMatcher replaces the target values with reference values aligned by semantic matching, leaving the structure path unchanged to preserve the versatile capability of pre-trained T2I models for generating diverse structures. We also employ a semantic-consistent masking strategy to isolate regions irrelevant to the personalized concept, such as the background, from core regions that should be replaced by the aligned appearances. DreamMatcher is compatible with existing T2I models, showing significant improvements in complex, non-rigid scenarios. Intensive experiments demonstrate the effectiveness and superiority of our approach compared to other baselines.	  </p></div>
-        </div>
-       </aside>
+      
       <!-- SMM  -->
 	  	<div class="sectionContent">
 <!--	 		<img align="center" src="AboutPageAssets/images/teaser-multidiffusion.jpg" style="height: 100%; width: 100%; object-fit: contain"  alt="">-->
@@ -145,7 +240,7 @@
       		<h2 class="sectionContentTitle">MoDiTalker: Motion-Disentangled Diffusion Model for High-Fidelity Talking Head Generation
       		<h3 class="sectionContentSubTitle"> Seyeon Kim*, <b><a>Siyoon Jin</a>*</b>, <a>Jihye Park*</a>, <a>Kihong Kim</a>, <a>Jiyoung Kim</a>, <a>Jisu Nam</a>, <a>Seungryong Kim</a>
 	 		</h3>
-		  	<h3 class="sectionContentSubTitle"><em>AAAI 2025 <b style="color:darksalmon"></b>
+		  	<h3 class="sectionContentSubTitle"><b style="color:darksalmon"><em>AAAI 2025 </b>
 	 		</em></h3>
     	</section>
 		<aside class="externalResourcesNav">
@@ -164,6 +259,32 @@
 		  </div>
 		 </aside>
 
+     <br>
+      <div class="sectionContent">
+			<img src="AboutPageAssets/teasers/dreammatcher_teaser.png" alt="DreamMatcher Teaser Image" width="100%">
+
+	  	</div>
+	  	<section class="section2Content">
+      		<h2 class="sectionContentTitle">DreamMatcher: Appearance Matching Self-Attention for Semantically-Consistent Text-to-Image Personalization
+      		<h3 class="sectionContentSubTitle">Jisu Nam, <a>Heesu Kim</a>, <a>DongJae Lee</a>, <b><a>Siyoon Jin</a></b>, <a>Seungryong Kim</a>, <a>Seunggyu Chang</a> 
+	 		</h3>
+		  	<h3 class="sectionContentSubTitle"><b style="color:darksalmon"><em>CVPR 2024</b>
+	 		</em></h3>
+    	</section>
+      <aside class="externalResourcesNav">
+
+        <div class="dropdown"> <a href="https://cvlab-kaist.github.io/DreamMatcher"  target="_blank">Project Page</a>
+
+        </div>
+
+        <div class="dropdown"> <a href="https://arxiv.org/pdf/2402.09812" target="_blank">ArXiv</a>
+
+        </div>
+        <div class="dropdown"> <span>Abstract</span>
+        <div class="dropdown-content">
+          <p style="text-align:left;">The objective of Text-to-Image (T2I) personalization is to customize diffusion models to a user-provided reference concept, generating diverse images of the reference concept aligned with target prompts. Prior methods for T2I personalization utilize the tuning of pre-trained T2I model weights. However, they require a cumbersome tuning process for each concept before generating personalized images. To ease the use of T2I personalization, we propose DreamMatcher, a tuning-free plug-in method that provides semantically aligned visual conditions of the reference concept to a diffusion model during the denoising process. We find that the key and value in the self-attention module play important roles in generating the structure and appearance of a personalized image, respectively. Hence, DreamMatcher replaces the target values with reference values aligned by semantic matching, leaving the structure path unchanged to preserve the versatile capability of pre-trained T2I models for generating diverse structures. We also employ a semantic-consistent masking strategy to isolate regions irrelevant to the personalized concept, such as the background, from core regions that should be replaced by the aligned appearances. DreamMatcher is compatible with existing T2I models, showing significant improvements in complex, non-rigid scenarios. Intensive experiments demonstrate the effectiveness and superiority of our approach compared to other baselines.	  </p></div>
+        </div>
+       </aside>
 	  <br><br>
 
 
