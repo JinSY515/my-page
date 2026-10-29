@@ -1,300 +1,427 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
-<!--
-	 Global site tag (gtag.js) - Google Analytics 
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-141762792-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-141762792-1');
-</script>
--->
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Siyoon Jin's Homepage</title>
-<link href="AboutPageAssets/styles/aboutPageStyle.css" rel="stylesheet" type="text/css">
-<style type="text/css">
-</style>
-
-<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
-<script>var __adobewebfontsappname__="dreamweaver"</script><script src="http://use.edgefonts.net/montserrat:n4:default;source-sans-pro:n2:default.js" type="text/javascript"></script>
+<title>Siyoon Jin</title>
+<meta name="description" content="Siyoon Jin — M.S./Ph.D. student at KAIST AI (CVLAB). Video generation, video world models, and visual correspondence.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="AboutPageAssets/styles/aboutPageStyle.css" rel="stylesheet">
 </head>
 
-<body alink = "#282727" vlink = "#9b9b9b" link = "#9b9b9b">
-<!-- Header content -->
-<header>
-  <div class="profilePhoto"> 
-    <!-- Profile photo --> 
-    <img src="AboutPageAssets/images/photo.jpg" alt="sample" width="200" > 
+<body>
+
+<header class="topnav">
+  <div class="container">
+    <a class="brand" href="#top">Siyoon Jin</a>
+    <nav>
+      <a href="#news">News</a>
+      <a href="#publications">Publications</a>
+      <a href="#education">Education</a>
+      <a href="#honors">Honors</a>
+    </nav>
   </div>
-<!--	<img src="AboutPageAssets/images/fonitAigolkatan.jpg" alt="sample" width="259"> </div>-->
-  <!-- Identity details -->
-  <section class="profileHeader">
-    <h1>Siyoon Jin</h1>
-<!--    <h3>Undergraduate student</h3>-->
-    <hr>
-    <p>I am a 1st year MS student at Computer Vision Lab (CVLAB) under the supervision of Prof. <a href="https://cvlab.kaist.ac.kr/" target="_blank">
-		Seungryong Kim</a> at <a href="https://www.kaist.ac.kr/kr/">Korea Advanced Institute of Science and Technology (KAIST)</a>. My research is in computer vision and deep learning, specifically interested in image/video generation, editing, personalization and matching.<br>
-    </p>
-  </section>
-  <!-- Links to Social network accounts -->
-  <aside class="socialNetworkNavBar">
-	   <div class="socialNetworkNav"> 
-      <!-- Add a Anchor tag with nested img tag here --> 
-		   <a href="mailto:siyun515@kaist.ac.kr">
-      <img src="AboutPageAssets/images/mail.png"  alt="sample" width="30" ></a> </div>
-      <div class="socialNetworkNav">
-      <!-- Add a Anchor tag with nested img tag here --> 
-		<a href="https://github.com/JinSY515" target="_blank">
-      <img src="AboutPageAssets/images/github.png" alt="sample" width="30"></a>  </div>
-    <!-- <div class="socialNetworkNav"> 
-		<a href="" target="_blank"> -->
-      <!-- Add a Anchor tag with nested img tag here --> 
-      <!-- <img src="AboutPageAssets/images/scholar.jpg"  alt="sample" width="30"></a>  </div>
-	  	  <div class="socialNetworkNav"> -->
-      <!-- Add a Anchor tag with nested img tag here --> 
-	
-	  <div class="socialNetworkNav">
-		 <a href="https://www.linkedin.com/in/siyoon-jin-055a00345" target="_blank">
-			 <img src="AboutPageAssets/images/linkedin.png"  alt="sample" width="30"> </a></div>
-
-	  
-  </aside>
 </header>
-<!-- content -->
-<section class="mainContent"> 
-  <!-- Contact details -->
-  
-  <!-- Previous experience details -->
-  
-  <section class="section2">
-  <h2 class="sectionTitle">Publications</h2>
-    <hr class="sectionTitleRule">
-    <hr class="sectionTitleRule2">
-    <div class="sectionContent">
-        <video autoplay muted loop playsinline width="100%;" >
-            <source src="AboutPageAssets/teasers/teaser_010.mp4" type="video/mp4">
-        </video> 
-        <video autoplay muted loop playsinline width="100%;" >
-            <source src="AboutPageAssets/teasers/teaser_001.mp4" type="video/mp4">
-        </video> 
-	  </div>
-    <section class="section2Content">
-        <h2 class="sectionContentTitle">MATRIX: Mask Track Alignment for Interaction-aware Video Generation</h2>
-        <h3 class="sectionContentSubTitle"><b><a>Siyoon Jin</a></b>, <a>Seongchan Kim</a>, <a>Dahyun Chung</a>, <a>Jaeho Lee</a>, <a>Hyunwook Choi</a>, <a>Jisu Nam</a>, <a>Jiyoung Kim</a>, <a>Seungryong Kim</a></h3>
-		  	<h3 class="sectionContentSubTitle"><b style="color:darksalmon"><em>ICLR 2026</b>
-        </em></h3>
-    </section>
 
-    <aside class="externalResourcesNav">
-      <div class="dropdown"> <a href="https://cvlab-kaist.github.io/MATRIX/" target="_blank">Project Page</a></div>
-      <div class="dropdown"> <a href="https://arxiv.org/pdf/2510.07310" target="_blank">ArXiv</a></div>
-      <div class="dropdown"> <span>Abstract</span>
-      <div class="dropdown-content">
-        <p style="text-align:left;">
-            Video DiTs have advanced video generation, yet they still struggle to model
-multi-instance or subject-object interactions. This raises a key question: How
-do these models internally represent interactions? To answer this, we curate
-MATRIX-11K, a video dataset with interaction-aware captions and multi-instance
-mask tracks. Using this dataset, we conduct a systematic analysis that formalizes
-two perspectives of video DiTs: semantic grounding, via video-to-text attention,
-which evaluates whether noun and verb tokens capture instances and their re-
-lations; and semantic propagation, via video-to-video attention, which assesses
-whether instance bindings persist across frames. We find both effects concentrate
-in a small subset of interaction-dominant layers. Motivated by this, we introduce
-MATRIX, a simple and effective regularization that aligns attention in specific
-layers of video DiTs with multi-instance mask tracks from the MATRIX-11K
-dataset, enhancing both grounding and propagation. We further propose Inter-
-GenEval, an evaluation protocol for interaction-aware video generation. In ex-
-periments, MATRIX improves both interaction fidelity and semantic alignment
-while reducing drift and hallucination. Extensive ablations validate our design
-choices. Codes and weights will be released.
-	        </p></div>
-        </div>
+<main class="container" id="top">
 
-      </aside>
-    <br>
- 
-    <div class="sectionContent">
-			  <img src="AboutPageAssets/teasers/difftrack_teaser.png" alt="DiffTrack Teaser Image" width="100%;">
-	  	</div>
-      <section class="section2Content">
-      		<h2 class="sectionContentTitle">Emergent Temporal Correspondence from Video Diffusion Transformers</h2>
-      		<h3 class="sectionContentSubTitle"><a>Jisu Nam</a>*, <a>Soowon Son</a>*, <a>Dahyun Chung</a>, <a>Jiyoung Kim</a>, <b><a>Siyoon Jin</a></b>, <a>Junwha Hur</a>, <a>Seungryong Kim</a>
-	 		</h3>
-		  	<h3 class="sectionContentSubTitle"><b style="color:darksalmon"><em>NeurIPS 2025</b>
-	 		</em></h3>
-    	</section>
-
-      <aside class="externalResourcesNav">
-        <div class="dropdown"> <a href="https://cvlab-kaist.github.io/DiffTrack/" target="_blank">Project Page</a></div>
-        <div class="dropdown"> <a href="https://arxiv.org/pdf/2506.17220" target="_blank">ArXiv</a></div>
-        <div class="dropdown"> <span>Abstract</span>
-        <div class="dropdown-content">
-          <p style="text-align:left;">
-            Recent advancements in video diffusion models based on Diffusion Transformers
-(DiTs) have achieved remarkable success in generating temporally coherent videos.
-Yet, a fundamental question persists: how do these models internally establish and
-represent temporal correspondences across frames? We introduce DiffTrack, the
-first quantitative analysis framework designed to answer this question. DiffTrack
-constructs a dataset of prompt-generated video with pseudo ground-truth tracking
-annotations and proposes novel evaluation metrics to systematically analyze how
-each component within the full 3D attention mechanism of DiTs (e.g., representa-
-tions, layers, and timesteps) contributes to establishing temporal correspondences.
-Our analysis reveals that query-key similarities in specific, but not all, layers play
-a critical role in temporal matching, and that this matching becomes increasingly
-prominent during the denoising process. We demonstrate practical applications
-of DiffTrack in zero-shot point tracking, where it achieves state-of-the-art perfor-
-mance compared to existing vision foundation and self-supervised video models.
-Further, we extend our findings to motion-enhanced video generation with a novel
-guidance method that improves temporal consistency of generated videos without
-additional training. We believe our work offers crucial insights into the inner
-workings of video DiTs and establishes a foundation for further research and
-applications leveraging their temporal understanding.
-	        </p></div>
-        </div>
-
-      </aside>
-
-      <br>
-	  	<div class="sectionContent">
-			  <img src="AboutPageAssets/teasers/vid-camedit_teaser.png" alt="Vid-CamEdit Teaser Image" width="100%;">
-	  	</div>
-      <section class="section2Content">
-      		<h2 class="sectionContentTitle">Vid-CamEdit: Video Camera Trajectory Editing with Generative Rendering from Estimated Geometry</h2>
-      		<h3 class="sectionContentSubTitle"><a>Junyoung Seo</a>, <a>Jisang Han</a>, <a>Jaewoo Jung</a>, <b><a>Siyoon Jin</a></b>, <a>Joungbin Lee</a>, <a>Takuya Narihira</a>, <a>Kazumi Fukuda</a>, <a>Takashi Shibuya</a>, <a>Donghoon Ahn</a>, <a>Shoukang Hu</a>, <a>Seungryong Kim</a>, <a>Yuki Mitsufuji</a>
-	 		</h3>
-		  	<h3 class="sectionContentSubTitle"><b style="color:darksalmon"><em>AAAI 2026</b>
-	 		</em></h3>
-    	</section>
-
-      <aside class="externalResourcesNav">
-        <div class="dropdown"> <a href="https://cvlab-kaist.github.io/Vid-CamEdit/" target="_blank">Project Page</a></div>
-        <div class="dropdown"> <a href="https://arxiv.org/pdf/2506.13697" target="_blank">ArXiv</a></div>
-        <div class="dropdown"> <span>Abstract</span>
-        <div class="dropdown-content">
-          <p style="text-align:left;">
-              We introduce Vid-CamEdit, a novel framework for video
-              camera trajectory editing, enabling the re-synthesis of
-              monocular videos along user-defined camera paths. This
-              task is challenging due to its ill-posed nature and the limited
-              multi-view video data for training. Traditional reconstruc-
-              tion methods struggle with extreme trajectory changes, and
-              existing generative models for dynamic novel view synthesis
-              cannot handle in-the-wild videos. Our approach consists of
-              two steps: estimating temporally consistent geometry, and
-              generative rendering guided by this geometry. By integrat-
-              ing geometric priors, the generative model focuses on syn-
-              thesizing realistic details where the estimated geometry is
-              uncertain. We eliminate the need for extensive 4D training
-              data through a factorized fine-tuning framework that sepa-
-              rately trains spatial and temporal components using multi-
-              view image and video data. Our method outperforms base-
-              lines in producing plausible videos from novel camera tra-
-              jectories, especially in extreme extrapolation scenarios on
-              real-world footage.
-	        </p></div>
-        </div>
-
-      </aside>
-
-      <br>
-	  <!-- SMM  -->
-	  	<div class="sectionContent">
-<!--	 		<img align="center" src="AboutPageAssets/images/teaser-multidiffusion.jpg" style="height: 100%; width: 100%; object-fit: contain"  alt="">-->
-			<img src="AboutPageAssets/teasers/am-adapter_teaser.png" alt="AM-Adapter Teaser Image" width="100%;">
-
-	  	</div>
-      <section class="section2Content">
-      		<h2 class="sectionContentTitle">Appearance Matching Adapter for Exemplar-based Semantic Image Synthesis</h2>
-      		<h3 class="sectionContentSubTitle"><b><a>Siyoon Jin</a></b>, <a>Jisu Nam</a>, <a>Jiyoung Kim</a>, <a>Dahyun Chung</a>, <a>Yeongseok Kim</a>, <a>Joonhyung Park</a>, <a>Heonjeong Chu</a>, <a>Seungryong Kim</a> 
-	 		</h3>
-		  	<h3 class="sectionContentSubTitle"><b style="color:darksalmon"><em>ICCV 2025</b>
-	 		</em></h3>
-    	</section>
-
-      <aside class="externalResourcesNav">
-
-
-        <div class="dropdown"> <a href="https://cvlab-kaist.github.io/AM-Adapter/" target="_blank">Project Page</a>
-
-        </div>
-        
-        <div class="dropdown"> <a href="https://arxiv.org/pdf/2412.03150" target="_blank">ArXiv</a>
-
-        </div>
-        <div class="dropdown"> <span>Abstract</span>
-        <div class="dropdown-content">
-          <p style="text-align:left;">Exemplar-based semantic image synthesis aims to generate images aligned with given semantic content while preserving the appearance of an exemplar image. Conventional structure-guidance models, such as ControlNet, are limited in that they cannot directly utilize exemplar images as input, relying instead solely on text prompts to control appearance. Recent tuning-free approaches address this limitation by transferring local appearance from the exemplar image to the synthesized image through implicit cross-image matching in the augmented self-attention mechanism of pre-trained diffusion models. However, these methods face challenges when applied to content-rich scenes with significant geometric deformations, such as driving scenes. In this paper, we propose the Appearance Matching Adapter (AM-Adapter), a learnable framework that enhances cross-image matching within augmented self-attention by incorporating semantic information from segmentation maps. To effectively disentangle generation and matching processes, we adopt a stage-wise training approach. Initially, we train the structure-guidance and generation networks, followed by training the AM-Adapter while keeping the other networks frozen. During inference, we introduce an automated exemplar retrieval method to efficiently select exemplar image-segmentation pairs. Despite utilizing a limited number of learnable parameters, our method achieves state-of-the-art performance, excelling in both semantic alignment preservation and local appearance fidelity. Extensive ablation studies further validate our design choices. Code and pre-trained weights will be publicly available.	  </p></div>
-        </div>
-
-      </aside>
-
-      
-      <!-- SMM  -->
-	  	<div class="sectionContent">
-<!--	 		<img align="center" src="AboutPageAssets/images/teaser-multidiffusion.jpg" style="height: 100%; width: 100%; object-fit: contain"  alt="">-->
-			<img src="AboutPageAssets/teasers/moditalker_teaser.png" alt="DreamMatcher Teaser Image" width="100%">
-
-	  	</div>
-	  	<section class="section2Content">
-      		<h2 class="sectionContentTitle">MoDiTalker: Motion-Disentangled Diffusion Model for High-Fidelity Talking Head Generation</h2>
-      		<h3 class="sectionContentSubTitle"> Seyeon Kim*, <b><a>Siyoon Jin</a>*</b>, <a>Jihye Park*</a>, <a>Kihong Kim</a>, <a>Jiyoung Kim</a>, <a>Jisu Nam</a>, <a>Seungryong Kim</a>
-	 		</h3>
-		  	<h3 class="sectionContentSubTitle"><b style="color:darksalmon"><em>AAAI 2025 </b>
-	 		</em></h3>
-    	</section>
-		<aside class="externalResourcesNav">
-      <div class="dropdown"> <a href="https://cvlab-kaist.github.io/MoDiTalker"  target="_blank">Project Page</a>
-
+  <!-- ================= Profile ================= -->
+  <section class="profile">
+    <img class="profile-photo" src="AboutPageAssets/images/photo.jpg" alt="Photo of Siyoon Jin">
+    <div>
+      <h1>Siyoon Jin</h1>
+      <p class="role">M.S./Ph.D. Student, KAIST AI &middot; Computer Vision Lab</p>
+      <div class="bio">
+        <p>I am an integrated M.S./Ph.D. student in Artificial Intelligence at
+          <a href="https://www.kaist.ac.kr/en/" target="_blank" rel="noopener">KAIST</a>, advised by
+          Prof. <a href="https://cvlab.kaist.ac.kr/" target="_blank" rel="noopener">Seungryong Kim</a> at CVLAB.
+          I am currently a research intern at <strong>NAVER Labs</strong>, working on an egocentric outdoor navigation world action model.
+          Before KAIST, I received my B.S. in Computer Science and Engineering from Korea University.</p>
+        <p>My research focuses on generative models for images and video: video world models, interaction-aware
+          video generation, image/video matching inside diffusion models, customization, and talking head generation.</p>
       </div>
+      <ul class="links">
+        <li><a href="mailto:siyun515@kaist.ac.kr">Email</a></li>
+        <li><a href="https://github.com/JinSY515" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/siyoon-jin-055a00345" target="_blank" rel="noopener">LinkedIn</a></li>
+        <!-- <li><a href="https://scholar.google.com/citations?user=XXXX" target="_blank" rel="noopener">Google Scholar</a></li> -->
+        <!-- <li><a href="AboutPageAssets/SiyoonJin_CV.pdf" target="_blank" rel="noopener">CV</a></li> -->
+      </ul>
+    </div>
+  </section>
 
-      <div class="dropdown"> <a href="https://arxiv.org/pdf/2403.19144" target="_blank">ArXiv</a>
+  <!-- ================= News ================= -->
+  <section class="block" id="news">
+    <div class="block-head"><h2>News</h2></div>
+    <ul class="news">
+      <li><span class="date">2026</span><span>Two papers accepted to <span class="hl">NeurIPS 2026</span>: <a href="https://cvlab-kaist.github.io/XTrack/" target="_blank" rel="noopener">XTrack</a> and <a href="https://cvlab-kaist.github.io/CORAL/" target="_blank" rel="noopener">CORAL</a>.</span></li>
+      <li><span class="date">2026</span><span><span class="hl">Seoul World Model</span> accepted to ECCV 2026 as a Spotlight (Oral).</span></li>
+      <li><span class="date">May 2026</span><span>Started a research internship at <span class="hl">NAVER Labs</span>.</span></li>
+      <li><span class="date">2026</span><span>WorldCam accepted to CVPR 2026 Workshop.</span></li>
+      <li><span class="date">2026</span><span><span class="hl">MATRIX</span> accepted to ICLR 2026.</span></li>
+      <li><span class="date">2025</span><span>Vid-CamEdit accepted to AAAI 2026.</span></li>
+      <li><span class="date">2025</span><span>DiffTrack accepted to NeurIPS 2025.</span></li>
+      <li><span class="date">2025</span><span><span class="hl">AM-Adapter</span> accepted to ICCV 2025, and won the Best Paper Award (Bronze) at IPIU 2025.</span></li>
+      <li><span class="date">Mar 2025</span><span>Joined KAIST AI as an M.S./Ph.D. student.</span></li>
+    </ul>
+  </section>
 
+  <!-- ================= Publications ================= -->
+  <section class="block" id="publications">
+    <div class="block-head">
+      <h2>Publications</h2>
+      <div class="seg" role="group" aria-label="Filter publications">
+        <button type="button" data-filter="selected" aria-pressed="false">Selected</button>
+        <button type="button" data-filter="all" aria-pressed="true">All</button>
       </div>
+    </div>
+    <p class="pub-legend">* equal contribution &nbsp;&middot;&nbsp; &Dagger; co-corresponding author</p>
 
-		  <div class="dropdown"> <span>Abstract</span>
-			<div class="dropdown-content">
-			  <p style="text-align:left;">Conventional GAN-based models for talking head generation often suffer from limited quality and unstable training. Recent approaches based on diffusion models aim to address these limitations and improve fidelity. However, they still face challenges, including extensive sampling time and difficulties in maintaining temporal consistency due to the high stochasticity of diffusion models. To overcome these challenges, we propose a novel motion-disentangled diffusion model for high-quality talking head generation, dubbed <b>MoDiTalker</b>. We introduce two modules: the audio-to-motion (AToM), designed to generate synchronized lip motions from audio, and the motion-to-video (MToV), designed to produce high-quality talking head video following the generated motion.
-          AToM excels in capturing subtle lip movements by leveraging an audio attention mechanism. In addition, MToV enhances temporal consistency by leveraging an efficient tri-plane representation. Our experiments conducted on standard benchmarks demonstrate that our model achieves superior performance compared to existing models. We also provide comprehensive ablation studies and user study results. 	  </p></div>
-		  </div>
-		 </aside>
-
-     <br>
-      <div class="sectionContent">
-			<img src="AboutPageAssets/teasers/dreammatcher_teaser.png" alt="DreamMatcher Teaser Image" width="100%">
-
-	  	</div>
-	  	<section class="section2Content">
-      		<h2 class="sectionContentTitle">DreamMatcher: Appearance Matching Self-Attention for Semantically-Consistent Text-to-Image Personalization
-      		<h3 class="sectionContentSubTitle">Jisu Nam, <a>Heesu Kim</a>, <a>DongJae Lee</a>, <b><a>Siyoon Jin</a></b>, <a>Seungryong Kim</a>, <a>Seunggyu Chang</a> 
-	 		</h3>
-		  	<h3 class="sectionContentSubTitle"><b style="color:darksalmon"><em>CVPR 2024</b>
-	 		</em></h3>
-    	</section>
-      <aside class="externalResourcesNav">
-
-        <div class="dropdown"> <a href="https://cvlab-kaist.github.io/DreamMatcher"  target="_blank">Project Page</a>
-
+    <!--
+      ===== Template for a new paper (copy, paste above the right year) =====
+      Add class "selected" to show it in the "Selected" filter.
+      <article class="pub selected">
+        <div class="pub-media"><img src="AboutPageAssets/teasers/NAME_teaser.png" alt="NAME teaser" loading="lazy"></div>
+        <!- no teaser yet? use:  <div class="pub-media placeholder"><span>NAME</span></div> ->
+        <div>
+          <h4 class="pub-title"><a href="PROJECT_URL" target="_blank" rel="noopener">Title</a></h4>
+          <p class="pub-authors"><span class="me">Siyoon Jin</span>, Coauthor, Seungryong Kim</p>
+          <p class="pub-venue">Venue Year <span class="badge">Oral</span></p>
+          <div class="pub-links">
+            <a href="PROJECT_URL" target="_blank" rel="noopener">Project</a>
+            <a href="https://arxiv.org/abs/XXXX.XXXXX" target="_blank" rel="noopener">arXiv</a>
+            <details><summary>Abstract</summary><p class="abstract">...</p></details>
+          </div>
         </div>
+      </article>
+    -->
 
-        <div class="dropdown"> <a href="https://arxiv.org/pdf/2402.09812" target="_blank">ArXiv</a>
+    <div class="pubs" id="pubs">
 
+      <!-- ---------- 2026 ---------- -->
+      <p class="year-label has-selected">2026</p>
+
+      <article class="pub selected">
+        <div class="pub-media" style="aspect-ratio: 1248 / 448" data-clip="6"
+             data-playlist="https://cvlab-kaist.github.io/XTrack/static/qual/ego2exo/d8db054f_piano.mp4 https://cvlab-kaist.github.io/XTrack/static/qual/ego2exo/79a728ac_violin_bow.mp4 https://cvlab-kaist.github.io/XTrack/static/qual/exo2ego/32dfc6fe_soccer_ball.mp4 https://cvlab-kaist.github.io/XTrack/static/qual/ego2exo/2d042a82_scrambled_egg_0.mp4"></div>
+        <div>
+          <h4 class="pub-title"><a href="https://cvlab-kaist.github.io/XTrack/" target="_blank" rel="noopener">XTrack: Repurposing Video Diffusion Transformers for Cross-View Temporal Object Correspondence</a></h4>
+          <p class="pub-authors"><span class="me">Siyoon Jin*</span>, Dahyun Chung*, Honggyu An, Sangbeom Lim, Wonjin Nam, Jaewoo Jung, Wonjun Moon, Seungryong Kim</p>
+          <p class="pub-venue">NeurIPS 2026</p>
+          <div class="pub-links">
+            <a href="https://cvlab-kaist.github.io/XTrack/" target="_blank" rel="noopener">Project</a>
+            <a href="https://arxiv.org/abs/2610.37633" target="_blank" rel="noopener">arXiv</a>
+            <details><summary>Abstract</summary><p class="abstract">Cross-view object correspondence identifies the same object across views. However, existing methods treat this as a frame-level matching problem, necessitating a query mask at every frame. Furthermore, without modeling temporal context, they suffer from severe ambiguity under appearance changes or occlusions. Therefore, we introduce cross-view temporal object correspondence, which requires preserving object identity across both views and time from a query mask. To address this, we propose XTrack, a streamlined framework which repurposes a pretrained video DiT with semantic and spatiotemporal priors for RGB-to-mask latent transport, jointly modeling cross-view matching and temporal tracking. However, naive video DiTs do not guarantee accurate cross-view grounding and often attend to semantically similar yet incorrect objects across views. Thus, we introduce focal cross-view attention alignment, hard negative conditioning, and local context crop strategies to ensure reliable grounding. Finally, beyond these architectural enhancements, we also tackle the lack of dense annotation by introducing a pseudo-label curation pipeline that converts sparse Ego-Exo4D annotations into dense supervision to enable effective video-level training. Our highly competitive performances validate the effectiveness of XTrack as a streamlined framework, ensuring robust temporal consistency and identity preservation.</p></details>
+          </div>
         </div>
-        <div class="dropdown"> <span>Abstract</span>
-        <div class="dropdown-content">
-          <p style="text-align:left;">The objective of Text-to-Image (T2I) personalization is to customize diffusion models to a user-provided reference concept, generating diverse images of the reference concept aligned with target prompts. Prior methods for T2I personalization utilize the tuning of pre-trained T2I model weights. However, they require a cumbersome tuning process for each concept before generating personalized images. To ease the use of T2I personalization, we propose DreamMatcher, a tuning-free plug-in method that provides semantically aligned visual conditions of the reference concept to a diffusion model during the denoising process. We find that the key and value in the self-attention module play important roles in generating the structure and appearance of a personalized image, respectively. Hence, DreamMatcher replaces the target values with reference values aligned by semantic matching, leaving the structure path unchanged to preserve the versatile capability of pre-trained T2I models for generating diverse structures. We also employ a semantic-consistent masking strategy to isolate regions irrelevant to the personalized concept, such as the background, from core regions that should be replaced by the aligned appearances. DreamMatcher is compatible with existing T2I models, showing significant improvements in complex, non-rigid scenarios. Intensive experiments demonstrate the effectiveness and superiority of our approach compared to other baselines.	  </p></div>
+      </article>
+
+      <article class="pub">
+        <div class="pub-media"><img src="https://arxiv.org/html/2602.17636v1/teaser.png" alt="CORAL teaser" loading="lazy"></div>
+        <div>
+          <h4 class="pub-title"><a href="https://cvlab-kaist.github.io/CORAL/" target="_blank" rel="noopener">CORAL: Correspondence Alignment for Improved Virtual Try-On</a></h4>
+          <p class="pub-authors">Jiyoung Kim, Youngjin Shin, <span class="me">Siyoon Jin</span>, Jisu Nam, Dahyun Chung, Jongjae Park, Hyeonwoo Kang, Seungryong Kim</p>
+          <p class="pub-venue">NeurIPS 2026</p>
+          <div class="pub-links">
+            <a href="https://cvlab-kaist.github.io/CORAL/" target="_blank" rel="noopener">Project</a>
+            <a href="https://arxiv.org/abs/2602.17636" target="_blank" rel="noopener">arXiv</a>
+            <details><summary>Abstract</summary><p class="abstract">Existing methods for Virtual Try-On (VTON) often struggle to preserve fine garment details, especially in unpaired settings where accurate person-garment correspondence is required. These methods do not explicitly enforce person-garment alignment and fail to explain how correspondence emerges within Diffusion Transformers (DiTs). In this paper, we first analyze full 3D attention in DiT-based architecture and reveal that the person-garment correspondence critically depends on precise person-garment query-key matching within the full 3D attention. Building on this insight, we then introduce CORrespondence ALignment (CORAL), a DiT-based framework that explicitly aligns query-key matching with robust external correspondences. CORAL integrates two complementary components: a correspondence distillation loss that aligns reliable matches with person-garment attention, and an entropy minimization loss that sharpens the attention distribution. We further propose a VLM-based evaluation protocol to better reflect human preference. CORAL consistently improves over the baseline, enhancing both global shape transfer and local detail preservation. Extensive ablations validate our design choices.</p></details>
+          </div>
         </div>
-       </aside>
-	  <br><br>
+      </article>
 
+      <article class="pub selected">
+        <div class="pub-media placeholder">
+          <span>Seoul World Model</span>
+          <video muted loop playsinline preload="none" data-src="https://seoul-world-model.github.io/video/page-teaser-1.mp4"></video>
+        </div>
+        <div>
+          <h4 class="pub-title"><a href="https://seoul-world-model.github.io/" target="_blank" rel="noopener">Seoul World Model: Grounding World Simulation Models in a Real-World Metropolis</a></h4>
+          <p class="pub-authors">Junyoung Seo, Hyunwook Choi, Minkyung Kwon, Jinhyeok Choi, <span class="me">Siyoon Jin</span>, Gayoung Lee, Junho Kim, Joungbin Lee, Geonmo Gu, Dongyoon Han, Sangdoo Yun, Seungryong Kim, Jin-Hwa Kim</p>
+          <p class="pub-venue">ECCV 2026 <span class="badge">Spotlight (Oral)</span></p>
+          <div class="pub-links">
+            <a href="https://seoul-world-model.github.io/" target="_blank" rel="noopener">Project</a>
+            <a href="https://arxiv.org/abs/2603.15583" target="_blank" rel="noopener">arXiv</a>
+            <details><summary>Abstract</summary><p class="abstract">What if a world simulation model could render not an imagined environment but a city that actually exists? Prior generative world models synthesize visually plausible yet artificial environments by imagining all content. We present Seoul World Model (SWM), a city-scale world model grounded in the real city of Seoul. SWM anchors autoregressive video generation through retrieval-augmented conditioning on nearby street-view images. However, this design introduces several challenges, including temporal misalignment between retrieved references and the dynamic target scene, limited trajectory diversity and data sparsity from vehicle-mounted captures at sparse intervals. We address these challenges through cross-temporal pairing, a large-scale synthetic dataset enabling diverse camera trajectories, and a view interpolation pipeline that synthesizes coherent training videos from sparse street-view images. We further introduce a Virtual Lookahead Sink to stabilize long-horizon generation by continuously re-grounding each chunk to a retrieved image at a future location. We evaluate SWM against recent video world models across three cities: Seoul, Busan, and Ann Arbor. SWM outperforms existing methods in generating spatially faithful, temporally consistent, long-horizon videos grounded in actual urban environments over trajectories reaching hundreds of meters, while supporting diverse camera movements and text-prompted scenario variations.</p></details>
+          </div>
+        </div>
+      </article>
 
-  <p class="footerDisclaimer">Template of <a href="https://lioryariv.github.io/">Lior Yariv</a><span></span></p>
-  <p class="footerNote"></p>
+      <article class="pub">
+        <div class="pub-media placeholder">
+          <span>WorldCam</span>
+          <video muted loop playsinline preload="none" data-src="https://cvlab-kaist.github.io/WorldCam/static/videos/long_horizon_revise/video_1.mp4"></video>
+        </div>
+        <div>
+          <h4 class="pub-title"><a href="https://cvlab-kaist.github.io/WorldCam/" target="_blank" rel="noopener">WorldCam: Interactive Autoregressive 3D Gaming Worlds with Camera Pose as a Unifying Geometric Representation</a></h4>
+          <p class="pub-authors">Jisu Nam, Yicong Hong, Chun-Hao Paul Huang, Feng Liu, Joungbin Lee, Jiyoung Kim, <span class="me">Siyoon Jin</span>, Yunsung Lee, Jaeyoon Jung, Suhwan Choi, Seungryong Kim, Yang Zhou</p>
+          <p class="pub-venue">CVPR 2026 Workshop</p>
+          <div class="pub-links">
+            <a href="https://cvlab-kaist.github.io/WorldCam/" target="_blank" rel="noopener">Project</a>
+            <a href="https://arxiv.org/abs/2603.16871" target="_blank" rel="noopener">arXiv</a>
+            <details><summary>Abstract</summary><p class="abstract">Recent advances in video diffusion transformers have enabled interactive gaming world models that allow users to explore generated environments over extended horizons. However, existing approaches struggle with precise action control and long-horizon 3D consistency. Most prior works treat user actions as abstract conditioning signals, overlooking the fundamental geometric coupling between actions and the 3D world, whereby actions induce relative camera motions that accumulate into a global camera pose within a 3D world. In this paper, we establish camera pose as a unifying geometric representation to jointly ground immediate action control and long-term 3D consistency. First, we define a physics-based continuous action space and represent user inputs in the Lie algebra to derive precise 6-DoF camera poses, which are injected into the generative model via a camera embedder to ensure accurate action alignment. Second, we use global camera poses as spatial indices to retrieve relevant past observations, enabling geometrically consistent revisiting of locations during long-horizon navigation. To support this research, we introduce a large-scale dataset comprising 3,000 minutes of authentic human gameplay annotated with camera trajectories and textual descriptions. Extensive experiments show that our approach substantially outperforms state-of-the-art interactive gaming world models in action controllability, long-horizon visual quality, and 3D spatial consistency.</p></details>
+          </div>
+        </div>
+      </article>
+
+      <article class="pub selected">
+        <div class="pub-media" style="aspect-ratio: 1664 / 560"
+             data-playlist="https://cvlab-kaist.github.io/MATRIX/wan_videos/teaser_000.mp4 https://cvlab-kaist.github.io/MATRIX/wan_videos/teaser_001.mp4 https://cvlab-kaist.github.io/MATRIX/wan_videos/teaser_002.mp4 https://cvlab-kaist.github.io/MATRIX/wan_videos/teaser_003.mp4"></div>
+        <div>
+          <h4 class="pub-title"><a href="https://cvlab-kaist.github.io/MATRIX/" target="_blank" rel="noopener">MATRIX: Mask Track Alignment for Interaction-aware Video Generation</a></h4>
+          <p class="pub-authors"><span class="me">Siyoon Jin</span>, Seongchan Kim, Dahyun Chung, Jaeho Lee, Hyunwook Choi, Jisu Nam, Jiyoung Kim, Seungryong Kim</p>
+          <p class="pub-venue">ICLR 2026</p>
+          <div class="pub-links">
+            <a href="https://cvlab-kaist.github.io/MATRIX/" target="_blank" rel="noopener">Project</a>
+            <a href="https://arxiv.org/abs/2510.07310" target="_blank" rel="noopener">arXiv</a>
+            <details><summary>Abstract</summary><p class="abstract">Video DiTs have advanced video generation, yet they still struggle to model multi-instance or subject-object interactions. This raises a key question: How do these models internally represent interactions? To answer this, we curate MATRIX-11K, a video dataset with interaction-aware captions and multi-instance mask tracks. Using this dataset, we conduct a systematic analysis that formalizes two perspectives of video DiTs: semantic grounding, via video-to-text attention, which evaluates whether noun and verb tokens capture instances and their relations; and semantic propagation, via video-to-video attention, which assesses whether instance bindings persist across frames. We find both effects concentrate in a small subset of interaction-dominant layers. Motivated by this, we introduce MATRIX, a simple and effective regularization that aligns attention in specific layers of video DiTs with multi-instance mask tracks from the MATRIX-11K dataset, enhancing both grounding and propagation. We further propose InterGenEval, an evaluation protocol for interaction-aware video generation. In experiments, MATRIX improves both interaction fidelity and semantic alignment while reducing drift and hallucination. Extensive ablations validate our design choices.</p></details>
+          </div>
+        </div>
+      </article>
+
+      <article class="pub">
+        <div class="pub-media"><img src="AboutPageAssets/teasers/vid-camedit_teaser.png" alt="Vid-CamEdit teaser" loading="lazy"></div>
+        <div>
+          <h4 class="pub-title"><a href="https://cvlab-kaist.github.io/Vid-CamEdit/" target="_blank" rel="noopener">Vid-CamEdit: Video Camera Trajectory Editing with Generative Rendering from Estimated Geometry</a></h4>
+          <p class="pub-authors">Junyoung Seo, Jisang Han, Jaewoo Jung, <span class="me">Siyoon Jin</span>, Joungbin Lee, Takuya Narihira, Kazumi Fukuda, Takashi Shibuya, Donghoon Ahn, Shoukang Hu, Seungryong Kim, Yuki Mitsufuji</p>
+          <p class="pub-venue">AAAI 2026</p>
+          <div class="pub-links">
+            <a href="https://cvlab-kaist.github.io/Vid-CamEdit/" target="_blank" rel="noopener">Project</a>
+            <a href="https://arxiv.org/abs/2506.13697" target="_blank" rel="noopener">arXiv</a>
+            <details><summary>Abstract</summary><p class="abstract">We introduce Vid-CamEdit, a novel framework for video camera trajectory editing, enabling the re-synthesis of monocular videos along user-defined camera paths. This task is challenging due to its ill-posed nature and the limited multi-view video data for training. Traditional reconstruction methods struggle with extreme trajectory changes, and existing generative models for dynamic novel view synthesis cannot handle in-the-wild videos. Our approach consists of two steps: estimating temporally consistent geometry, and generative rendering guided by this geometry. By integrating geometric priors, the generative model focuses on synthesizing realistic details where the estimated geometry is uncertain. We eliminate the need for extensive 4D training data through a factorized fine-tuning framework that separately trains spatial and temporal components using multi-view image and video data. Our method outperforms baselines in producing plausible videos from novel camera trajectories, especially in extreme extrapolation scenarios on real-world footage.</p></details>
+          </div>
+        </div>
+      </article>
+
+      <!-- ---------- 2025 ---------- -->
+      <p class="year-label has-selected">2025</p>
+
+      <article class="pub">
+        <div class="pub-media"><img src="AboutPageAssets/teasers/difftrack_teaser.png" alt="DiffTrack teaser" loading="lazy"></div>
+        <div>
+          <h4 class="pub-title"><a href="https://cvlab-kaist.github.io/DiffTrack/" target="_blank" rel="noopener">Emergent Temporal Correspondences from Video Diffusion Transformers</a></h4>
+          <p class="pub-authors">Jisu Nam*, Soowon Son*, Dahyun Chung, Jiyoung Kim, <span class="me">Siyoon Jin</span>, Junhwa Hur, Seungryong Kim</p>
+          <p class="pub-venue">NeurIPS 2025</p>
+          <div class="pub-links">
+            <a href="https://cvlab-kaist.github.io/DiffTrack/" target="_blank" rel="noopener">Project</a>
+            <a href="https://arxiv.org/abs/2506.17220" target="_blank" rel="noopener">arXiv</a>
+            <details><summary>Abstract</summary><p class="abstract">Recent advancements in video diffusion models based on Diffusion Transformers (DiTs) have achieved remarkable success in generating temporally coherent videos. Yet, a fundamental question persists: how do these models internally establish and represent temporal correspondences across frames? We introduce DiffTrack, the first quantitative analysis framework designed to answer this question. DiffTrack constructs a dataset of prompt-generated video with pseudo ground-truth tracking annotations and proposes novel evaluation metrics to systematically analyze how each component within the full 3D attention mechanism of DiTs (e.g., representations, layers, and timesteps) contributes to establishing temporal correspondences. Our analysis reveals that query-key similarities in specific, but not all, layers play a critical role in temporal matching, and that this matching becomes increasingly prominent during the denoising process. We demonstrate practical applications of DiffTrack in zero-shot point tracking, where it achieves state-of-the-art performance compared to existing vision foundation and self-supervised video models. Further, we extend our findings to motion-enhanced video generation with a novel guidance method that improves temporal consistency of generated videos without additional training. We believe our work offers crucial insights into the inner workings of video DiTs and establishes a foundation for further research and applications leveraging their temporal understanding.</p></details>
+          </div>
+        </div>
+      </article>
+
+      <article class="pub selected">
+        <div class="pub-media"><img src="AboutPageAssets/teasers/am-adapter_teaser.png" alt="AM-Adapter teaser" loading="lazy"></div>
+        <div>
+          <h4 class="pub-title"><a href="https://cvlab-kaist.github.io/AM-Adapter/" target="_blank" rel="noopener">Appearance Matching Adapter for Exemplar-based Semantic Image Synthesis in-the-Wild</a></h4>
+          <p class="pub-authors"><span class="me">Siyoon Jin</span>, Jisu Nam, Jiyoung Kim, Dahyun Chung, Yeong-Seok Kim, Joonhyung Park, HeonJeong Chu, Seungryong Kim</p>
+          <p class="pub-venue">ICCV 2025 <span class="badge">IPIU 2025 Best Paper (Bronze)</span></p>
+          <div class="pub-links">
+            <a href="https://cvlab-kaist.github.io/AM-Adapter/" target="_blank" rel="noopener">Project</a>
+            <a href="https://arxiv.org/abs/2412.03150" target="_blank" rel="noopener">arXiv</a>
+            <details><summary>Abstract</summary><p class="abstract">Exemplar-based semantic image synthesis aims to generate images aligned with given semantic content while preserving the appearance of an exemplar image. Conventional structure-guidance models, such as ControlNet, are limited in that they cannot directly utilize exemplar images as input, relying instead solely on text prompts to control appearance. Recent tuning-free approaches address this limitation by transferring local appearance from the exemplar image to the synthesized image through implicit cross-image matching in the augmented self-attention mechanism of pre-trained diffusion models. However, these methods face challenges when applied to content-rich scenes with significant geometric deformations, such as driving scenes. In this paper, we propose the Appearance Matching Adapter (AM-Adapter), a learnable framework that enhances cross-image matching within augmented self-attention by incorporating semantic information from segmentation maps. To effectively disentangle generation and matching processes, we adopt a stage-wise training approach. Initially, we train the structure-guidance and generation networks, followed by training the AM-Adapter while keeping the other networks frozen. During inference, we introduce an automated exemplar retrieval method to efficiently select exemplar image-segmentation pairs. Despite utilizing a limited number of learnable parameters, our method achieves state-of-the-art performance, excelling in both semantic alignment preservation and local appearance fidelity. Extensive ablation studies further validate our design choices. Code and pre-trained weights will be publicly available.</p></details>
+          </div>
+        </div>
+      </article>
+
+      <article class="pub selected">
+        <div class="pub-media"><img src="AboutPageAssets/teasers/moditalker_teaser.png" alt="MoDiTalker teaser" loading="lazy"></div>
+        <div>
+          <h4 class="pub-title"><a href="https://cvlab-kaist.github.io/MoDiTalker" target="_blank" rel="noopener">MoDiTalker: Motion-Disentangled Diffusion Model for High-Fidelity Talking Head Generation</a></h4>
+          <p class="pub-authors">Seyeon Kim*, <span class="me">Siyoon Jin*</span>, Jihye Park*, Kihong Kim, Jiyoung Kim, Jisu Nam, Seungryong Kim</p>
+          <p class="pub-venue">AAAI 2025</p>
+          <div class="pub-links">
+            <a href="https://cvlab-kaist.github.io/MoDiTalker" target="_blank" rel="noopener">Project</a>
+            <a href="https://arxiv.org/abs/2403.19144" target="_blank" rel="noopener">arXiv</a>
+            <details><summary>Abstract</summary><p class="abstract">Conventional GAN-based models for talking head generation often suffer from limited quality and unstable training. Recent approaches based on diffusion models aim to address these limitations and improve fidelity. However, they still face challenges, including extensive sampling time and difficulties in maintaining temporal consistency due to the high stochasticity of diffusion models. To overcome these challenges, we propose a novel motion-disentangled diffusion model for high-quality talking head generation, dubbed MoDiTalker. We introduce two modules: the audio-to-motion (AToM), designed to generate synchronized lip motions from audio, and the motion-to-video (MToV), designed to produce high-quality talking head video following the generated motion. AToM excels in capturing subtle lip movements by leveraging an audio attention mechanism. In addition, MToV enhances temporal consistency by leveraging an efficient tri-plane representation. Our experiments conducted on standard benchmarks demonstrate that our model achieves superior performance compared to existing models. We also provide comprehensive ablation studies and user study results.</p></details>
+          </div>
+        </div>
+      </article>
+
+      <!-- ---------- 2024 ---------- -->
+      <p class="year-label">2024</p>
+
+      <article class="pub">
+        <div class="pub-media"><img src="AboutPageAssets/teasers/dreammatcher_teaser.png" alt="DreamMatcher teaser" loading="lazy"></div>
+        <div>
+          <h4 class="pub-title"><a href="https://cvlab-kaist.github.io/DreamMatcher" target="_blank" rel="noopener">DreamMatcher: Appearance Matching Self-Attention for Semantically-Consistent Text-to-Image Customization</a></h4>
+          <p class="pub-authors">Jisu Nam, Heesu Kim, DongJae Lee, <span class="me">Siyoon Jin</span>, Seungryong Kim&Dagger;, Seunggyu Chang&Dagger;</p>
+          <p class="pub-venue">CVPR 2024</p>
+          <div class="pub-links">
+            <a href="https://cvlab-kaist.github.io/DreamMatcher" target="_blank" rel="noopener">Project</a>
+            <a href="https://arxiv.org/abs/2402.09812" target="_blank" rel="noopener">arXiv</a>
+            <details><summary>Abstract</summary><p class="abstract">The objective of Text-to-Image (T2I) personalization is to customize diffusion models to a user-provided reference concept, generating diverse images of the reference concept aligned with target prompts. Prior methods for T2I personalization utilize the tuning of pre-trained T2I model weights. However, they require a cumbersome tuning process for each concept before generating personalized images. To ease the use of T2I personalization, we propose DreamMatcher, a tuning-free plug-in method that provides semantically aligned visual conditions of the reference concept to a diffusion model during the denoising process. We find that the key and value in the self-attention module play important roles in generating the structure and appearance of a personalized image, respectively. Hence, DreamMatcher replaces the target values with reference values aligned by semantic matching, leaving the structure path unchanged to preserve the versatile capability of pre-trained T2I models for generating diverse structures. We also employ a semantic-consistent masking strategy to isolate regions irrelevant to the personalized concept, such as the background, from core regions that should be replaced by the aligned appearances. DreamMatcher is compatible with existing T2I models, showing significant improvements in complex, non-rigid scenarios. Intensive experiments demonstrate the effectiveness and superiority of our approach compared to other baselines.</p></details>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- ---------- Under review ---------- -->
+    <h3 class="subhead">Under Review</h3>
+    <ul class="review-list">
+      <li>
+        <h4 class="pub-title">Multi-Agent Egocentric World Model with Fine-Grained Embodied Interaction</h4>
+        <p class="pub-authors">Dahyun Chung, <span class="me">Siyoon Jin</span>, Hyunwook Choi, Junyoung Seo, Honggyu An, Hyunsung Kim, Seung Wook Kim, Seungryong Kim</p>
+      </li>
+      <li>
+        <h4 class="pub-title">World Observer: Joint Actor-Observer Generation for Persistent World Modeling</h4>
+        <p class="pub-authors">Hyunwook Choi, Dahyun Chung, Hyunsung Kim, <span class="me">Siyoon Jin</span>, Jinhyeok Choi, Junyoung Seo, Seungryong Kim</p>
+      </li>
+      <li>
+        <h4 class="pub-title">Lip Forcing: Few-Step Autoregressive Diffusion for Real-time Lip Synchronization</h4>
+        <p class="pub-authors">Paul Hyunbin Cho, Jinhyuk Jang, SeokYoung Lee, Joungbin Lee, <span class="me">Siyoon Jin</span>, Heeseong Shin, Jung Yi, Yunjin Park, Chulmin Park, Seungryong Kim</p>
+      </li>
+      <li>
+        <h4 class="pub-title">Repurposing Video Diffusion Transformers for Robust Point Tracking</h4>
+        <p class="pub-authors">Soowon Son, Jisu Nam, Chaehyun Kim, Honggyu An, Hyunah Ko, Dahyun Chung, <span class="me">Siyoon Jin</span>, Jung Yi, Jaewon Min, Jiyoung Kim, Junhwa Hur, Seungryong Kim</p>
+      </li>
+    </ul>
+  </section>
+
+  <!-- ================= Education & Experience ================= -->
+  <section class="block" id="education">
+    <div class="block-head"><h2>Education &amp; Experience</h2></div>
+    <ul class="timeline">
+      <li>
+        <span class="org">NAVER Labs</span><span class="when">May 2026 – Nov 2026</span>
+        <span class="what">Research Intern &middot; Egocentric outdoor navigation world action model</span>
+      </li>
+      <li>
+        <span class="org">Korea Advanced Institute of Science and Technology (KAIST)</span><span class="when">Mar 2025 – Present</span>
+        <span class="what">M.S./Ph.D. in Artificial Intelligence &middot; Advisor: Seungryong Kim</span>
+      </li>
+      <li>
+        <span class="org">Korea University</span><span class="when">Aug 2024 – Feb 2025</span>
+        <span class="what">M.S./Ph.D. in Computer Science and Engineering &middot; Advisor: Seungryong Kim</span>
+      </li>
+      <li>
+        <span class="org">Korea University</span><span class="when">Mar 2020 – Aug 2024</span>
+        <span class="what">B.S. in Computer Science and Engineering</span>
+      </li>
+    </ul>
+  </section>
+
+  <!-- ================= Honors & Service ================= -->
+  <section class="block" id="honors">
+    <div class="block-head"><h2>Honors &amp; Awards</h2></div>
+    <ul class="plain">
+      <li>
+        <span>Best Paper Award, Bronze Prize — 37th Workshop on Image Processing and Image Understanding (IPIU)</span><span class="when">2025</span>
+        <span class="sub">Appearance Matching Adapter for Exemplar-based Semantic Image Synthesis in-the-Wild</span>
+      </li>
+      <li>
+        <span>Dean's List, Korea University</span><span class="when">2020, 2021</span>
+        <span class="sub">GPA 4.5 / 4.5</span>
+      </li>
+      <li>
+        <span>Semester High Honors, Korea University</span><span class="when">2020 – 2023</span>
+      </li>
+    </ul>
+  </section>
+
+  <section class="block" id="service">
+    <div class="block-head"><h2>Academic Service</h2></div>
+    <ul class="plain">
+      <li><span>Conference Reviewer, International Conference on Learning Representations (ICLR)</span><span class="when">2026, 2027</span></li>
+    </ul>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">Last updated October 2026</div>
 </footer>
+
+<script>
+  // Publication filter: "Selected" / "All". Without JS every paper stays visible.
+  (function () {
+    var pubs = document.getElementById('pubs');
+    var buttons = document.querySelectorAll('.seg button');
+    function apply(mode) {
+      pubs.classList.toggle('only-selected', mode === 'selected');
+      buttons.forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.filter === mode)); });
+      try { localStorage.setItem('pubFilter', mode); } catch (e) {}
+    }
+    buttons.forEach(function (b) { b.addEventListener('click', function () { apply(b.dataset.filter); }); });
+    var saved = null;
+    try { saved = localStorage.getItem('pubFilter'); } catch (e) {}
+    apply(saved === 'selected' ? 'selected' : 'all');
+  })();
+
+  // Teaser playlists: <div class="pub-media" data-playlist="url1 url2 ..." data-clip="seconds">.
+  // Two stacked videos cross-fade; the next clip preloads while the current one plays.
+  (function () {
+    var boxes = document.querySelectorAll('.pub-media[data-playlist]');
+    boxes.forEach(function (box) {
+      var list = box.dataset.playlist.trim().split(/\s+/);
+      var clip = parseFloat(box.dataset.clip) || 0;
+      var vids = [0, 1].map(function () {
+        var v = document.createElement('video');
+        v.muted = true; v.playsInline = true; v.preload = 'auto';
+        v.setAttribute('muted', ''); v.setAttribute('playsinline', '');
+        box.appendChild(v);
+        return v;
+      });
+      var cur = 0, idx = 0, started = false, visible = false;
+      function active() { return vids[cur]; }
+      function next() {
+        var a = vids[cur], b = vids[1 - cur];
+        idx = (idx + 1) % list.length;
+        if (list.length > 1) {
+          b.currentTime = 0;
+          b.play().catch(function () {});
+          b.classList.add('on'); a.classList.remove('on');
+          a.pause();
+          cur = 1 - cur;
+          a.src = list[(idx + 1) % list.length];
+        } else {
+          a.currentTime = 0; a.play().catch(function () {});
+        }
+      }
+      vids.forEach(function (v) {
+        v.addEventListener('timeupdate', function () {
+          // Switch just before the end too: some browsers never fire 'ended' on remote clips.
+          var limit = clip || (v.duration ? v.duration - 0.25 : Infinity);
+          if (v === active() && v.currentTime >= limit) next();
+        });
+        v.addEventListener('ended', function () { if (v === active()) next(); });
+      });
+      function start() {
+        started = true;
+        vids[0].src = list[0]; vids[0].classList.add('on');
+        if (list.length > 1) vids[1].src = list[1];
+      }
+      new IntersectionObserver(function (entries) {
+        visible = entries[0].isIntersecting;
+        if (visible) { if (!started) start(); active().play().catch(function () {}); }
+        else if (started) active().pause();
+      }, { rootMargin: '200px' }).observe(box);
+    });
+  })();
+
+  // Remote teaser videos: load and play only while on screen.
+  (function () {
+    var vids = document.querySelectorAll('video[data-src]');
+    if (!('IntersectionObserver' in window)) {
+      vids.forEach(function (v) { v.src = v.dataset.src; v.play().catch(function () {}); });
+      return;
+    }
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        var v = e.target;
+        if (e.isIntersecting) {
+          if (!v.src) v.src = v.dataset.src;
+          v.play().catch(function () {});
+        } else if (v.src) {
+          v.pause();
+        }
+      });
+    }, { rootMargin: '200px' });
+    vids.forEach(function (v) { io.observe(v); });
+  })();
+</script>
 </body>
 </html>
